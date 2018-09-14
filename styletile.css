@@ -2,14 +2,40 @@ body,
 html {
     height: 100%;
     margin: 0;
-    font-family: "tangerine";
+}
 
+#sectionwrapper {
+    width: 1100px;
+}
+
+h1 {
+    font-family: 'Tangerine', bold;
+    font-size: 5em;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Tangerine', bold;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.header img {
+    height: 280px;
+    width: 280px;
+    margin-top: 0;
+}
+
+#more {
+    display: none;
 }
 
 /* Menu og header */
 .header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/artboard1.jpg");
-    height: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.14)),
+        url("imgs/large/blade.jpg");
+
+    height: 95%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,63 +46,106 @@ html {
 .header_text {
     text-align: center;
     position: absolute;
-    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+    width: 50%;
+    transform: translate(-50%, 50%);
+
+    margin-top: 5px;
+
+
+
 }
 
 .header_text button {
-    border: none;
-    outline: 0;
+    padding: 10px 20px;
+
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
     display: inline-block;
-    padding: 10px 25px;
-    color: black;
-    background-color: #ffe8a9;
-    text-align: center;
-    cursor: pointer;
-}
-
-.header_text button:hover {
-    background-color: rgba(252, 202, 65, 0.84);
+    border: none;
+    border-bottom: 2px solid #000;
+    border-left: 2px solid #000;
+    margin-left: 10px;
     color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 10px;
+    box-shadow: 1px 1px black;
+    background-color: rgba(10, 61, 3, 0.69);
 }
 
-/** menu/body **/
 
-body {
-    background-color: #fff4d5;
-}
 
-article {
-    padding: 10px;
-    background-color: #fff2c5;
-    border: 1px solid rgba(0, 0, 0, 0.37);
-    box-shadow: 5px 10px rgba(136, 136, 136, 0.35);
-    cursor: pointer;
+.header_text button:before,
+.header_text button:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: #000;
+    transition: all 0.3s ease;
 
-}
-
-article:hover {
-    background-color: rgba(252, 202, 65, 0.31);
 
 }
 
-.data-container article img {
+.header_text button:before {
+    height: 0%;
+    width: 2px;
+
+}
+
+.header_text button:after {
+    width: 0%;
+    height: 2px;
+
+}
+
+.header_text button:hover:before {
+    height: 100%;
+
+}
+
+.header_text button:hover:after {
     width: 100%;
-}
-
-.data-container {
-    margin: 0 auto;
-    display: grid;
 
 }
 
-@media screen and (min-width:580px) {
-    .data-container {
+.header a {
+    color: #e3ffef;
+    text-decoration: none;
+    font-size: 2.3em;
+}
+
+/** header og menu slut **/
+
+
+header,
+article {
+    min-height: 300px;
+    padding: 40px;
+
+}
+
+
+
+.billede2 {
+    background-image: url(imgs/pizza_lang.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+@media screen and (min-width:480px) {
+
+
+    .section1 {
+        display: grid;
         padding-left: 10%;
         padding-right: 10%;
-        grid-gap: 20px;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
     }
 }

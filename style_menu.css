@@ -1,0 +1,96 @@
+body {}
+
+article {
+    padding: 10px;
+    background-color: #fff2c5;
+    border: 1px solid rgba(0, 0, 0, 0.37);
+    box-shadow: 5px 10px rgba(136, 136, 136, 0.35);
+    cursor: pointer;
+
+}
+
+article:hover {
+    background-color: rgba(252, 202, 65, 0.31);
+
+}
+
+.data-container article img {
+    width: 100%;
+}
+
+.data-container {
+    margin: 0 auto;
+    display: grid;
+
+}
+
+h1 {
+    text-transform: capitalize;
+    text-align: center;
+
+}
+
+h3 {
+    font-size: 4em;
+}
+
+
+
+@media screen and (min-width:580px) {
+    .data-container {
+        padding-left: 10%;
+        padding-right: 10%;
+        grid-gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+#modal {
+    width: 100vw;
+
+    position: fixed;
+    background-color: rgba(0, 0, 0, .7);
+    text-align: center;
+    transition: all 1s;
+    opacity: 0;
+    pointer-events: none;
+    overflow: scroll;
+    transition: 1s;
+
+}
+
+#modal-content {
+    width: 50vw;
+    height: 70vh;
+    background-color: rgb(250, 250, 250);
+    margin: auto;
+}
+
+#modal.vis {
+
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.5s;
+    height: 700px;
+    margin-top: -300px;
+}
+
+
+#modal img {
+    height: 50vw;
+    width: 50vw;
+    margin-top: -35px;
+    object-fit: scale-down;
+}
+
+#modal button {
+    font-size: 1em;
+    margin-top: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+footer {
+    height: 100px;
+}

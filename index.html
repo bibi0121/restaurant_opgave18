@@ -4,7 +4,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styletile.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/logo57x57@2x.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/logo60x60.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/logo114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/logo144x144.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/logo32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/logo96x96@2x.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/logo16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
     <title>Cibo Sano restaurent</title>
 </head>
 
@@ -13,38 +24,50 @@
 <body>
 
     <div class="header">
+        <img src="assets/logo60x60.png" alt="logo">
+        <!--        <img class="billede2" src="imgs/large/blade.jpg" alt="k">-->
         <div class="header_text">
-            <h3>CIBO SANO</h3>
-            <button class="menu-item" data-kategori="alle">Alle</button>
 
-            <button class="menu-item" data-kategori="forretter">Forretter</button>
 
-            <button class="menu-item" data-kategori="hovedretter">Hovedretter</button>
 
-            <button class="menu-item" data-kategori="desserter">Desserter</button>
+            <button class="knap"><span> <a href="#velkommen">Velkommen</a> </span> </button>
 
-            <button class="menu-item" data-kategori="drikkevarer">Drikkevarer</button>
+            <button class="knap"> <span> <a href="menu.html">Menu</a> </span></button>
 
-            <button class="menu-item" data-kategori="sideorders">Sideorders</button>
+            <button class="knap"> <span> <a href="#resevationer">Resevationer</a></span></button>
+
+            <button class="knap"><span> <a href="#kontakt">Kontakt os</a></span></button>
 
         </div>
     </div>
-
-
-    <h1> Velkommen til </h1>
-
-    <main class="container">
-        <section class="data-container"></section>
-    </main>
+    <h1 id="velkommen">Velkommen til</h1>
 
 
 
+    <section class="section1">
+        <article id="om_os">
+            <h2>Om os</h2>
+            <p>Vi er et klassisk trattoria, hvor det uhøjtidelige præger både maden og menneskerne, så her er plads til både en hurtig ret på vej i biografen og det store udtræk med antipasti over pasta eller pizze til <span id="dots">...</span><span id="more"> secondi og dolce. Som enhver italiener, tager vi måltidet seriøst. Menuen byder på vitello tonnato og gode skinker, risotto milanese, velstegt kød og både tiramisu og panna cotta, og vi tilbereder det hele fra bunden af de bedste italienske råvarer. Ciao!</span></p>
 
-    <footer>
+            <button onclick="myFunction()" id="myBtn">Read more</button>
+        </article>
 
-    </footer>
+        <article class="billede1">
+            <img src="imgs/italy.jpg" alt="italy">
+        </article>
+
+    </section>
+
+    <section class="billede2">
+
+        <article class="om_billede">
+        </article>
+    </section>
 
 
+    <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="javascript.js"></script>
 </body>
 
 </html>
