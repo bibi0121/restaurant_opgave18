@@ -1,170 +1,244 @@
 [
-  {
-    "Navn": "BURRATA",
-    "Kategori": "Forretter",
-    "Pris": "125,-",
-    "Beskrivelse": "Burrata, tomater, olivenolie og basilikum",
-    "Billede": "burrata"
+    {
+        "Navn": "BURRATA",
+        "Kategori": "Forretter",
+        "Pris": "125,-",
+        "Beskrivelse": "Burrata, tomater, olivenolie og basilikum",
+        "Billede": "burrata"
   },
-  {
-    "Navn": "BRUSCHETTA",
-    "Kategori": "Forretter",
-    "Pris": "95,-",
-    "Beskrivelse": "Bruschetta, ricotta, aubergine og basilikum",
-    "Billede": "bruschetta"
+    {
+        "Navn": "BRUSCHETTA",
+        "Kategori": "Forretter",
+        "Pris": "95,-",
+        "Beskrivelse": "Bruschetta, ricotta, aubergine og basilikum",
+        "Billede": "bruschetta"
   },
-  {
-    "Navn": "ZUPPA FREDDA DI POMODORO",
-    "Kategori": "Forretter",
-    "Pris": "95,-",
-    "Beskrivelse": "Kold tomatsuppe, med agurk, forårsløg og olie.",
-    "Billede": "zuppa"
+    {
+        "Navn": "ZUPPA FREDDA DI POMODORO",
+        "Kategori": "Forretter",
+        "Pris": "95,-",
+        "Beskrivelse": "Kold tomatsuppe, med agurk, forårsløg og olie.",
+        "Billede": "zuppa"
   },
-  {
-    "Navn": "SALMONE SALATO",
-    "Kategori": "Forretter",
-    "Pris": "125,-",
-    "Beskrivelse": "Salte lakse salat, med avokado, tomat, kapers og bitre salater.",
-    "Billede": "salmone"
+    {
+        "Navn": "SALMONE SALATO",
+        "Kategori": "Forretter",
+        "Pris": "125,-",
+        "Beskrivelse": "Salte lakse salat, med avokado, tomat, kapers og bitre salater.",
+        "Billede": "salmone"
   },
-  {
-    "Navn": "CARPACCIO DI MANZO",
-    "Kategori": "Forretter",
-    "Pris": "125,-",
-    "Beskrivelse": "Mørt oksekød med rucola, parmesan, pinjekerner og en citron dressing",
-    "Billede": "carpaccio"
+    {
+        "Navn": "CARPACCIO DI MANZO",
+        "Kategori": "Forretter",
+        "Pris": "125,-",
+        "Beskrivelse": "Mørt oksekød med rucola, parmesan, pinjekerner og en citron dressing",
+        "Billede": "carpaccio"
   },
-  {
-    "Navn": "RAVIOLI CON SPINACI E RICOTTA",
-    "Kategori": "Pasta",
-    "Pris": "145,-",
-    "Beskrivelse": "Spinat og ricottaravioli med brunet smør, salvie, parmesan, citron og valnødder",
-    "Billede": "ravioli"
+    {
+        "Navn": "RAVIOLI CON SPINACI E RICOTTA",
+        "Kategori": "Pasta",
+        "Pris": "145,-",
+        "Beskrivelse": "Spinat og ricottaravioli med brunet smør, salvie, parmesan, citron og valnødder",
+        "Billede": "ravioli"
   },
-  {
-    "Navn": "SPAGHETTI CON POLPETTE",
-    "Kategori": "Pasta",
-    "Pris": "135,-",
-    "Beskrivelse": "Spaghetti med kødboller, tomatsovs og parmesan.",
-    "Billede": "spaghetti"
+    {
+        "Navn": "SPAGHETTI CON POLPETTE",
+        "Kategori": "Pasta",
+        "Pris": "135,-",
+        "Beskrivelse": "Spaghetti med kødboller, tomatsovs og parmesan.",
+        "Billede": "spaghetti"
   },
-  {
-    "Navn": "LINGUINI CON COZZE",
-    "Kategori": "Pasta",
-    "Pris": "155,-",
-    "Beskrivelse": "Linguini med muslinger, tomat, persille og chili.",
-    "Billede": "linguini"
+    {
+        "Navn": "LINGUINI CON COZZE",
+        "Kategori": "Pasta",
+        "Pris": "155,-",
+        "Beskrivelse": "Linguini med muslinger, tomat, persille og chili.",
+        "Billede": "linguini"
   },
-  {
-    "Navn": "BISTECCA ALLA GRIGLIA",
-    "Kategori": "Kødretter",
-    "Pris": "245,-",
-    "Beskrivelse": "Ribeye med knuste kartofler, urtesmør, rucola og citron vinaigrette.",
-    "Billede": "ribeye"
+    {
+        "Navn": "BISTECCA ALLA GRIGLIA",
+        "Kategori": "Kødretter",
+        "Pris": "245,-",
+        "Beskrivelse": "Ribeye med knuste kartofler, urtesmør, rucola og citron vinaigrette.",
+        "Billede": "ribeye"
   },
-  {
-    "Navn": "COSCE DI GALLETTO GRIGLIATE",
-    "Kategori": "Kødretter",
-    "Pris": "185,-",
-    "Beskrivelse": "Grillet unghane med ris, korriander, kantareller og en hjemmelavet dressing.",
-    "Billede": "cosce"
+    {
+        "Navn": "COSCE DI GALLETTO GRIGLIATE",
+        "Kategori": "Kødretter",
+        "Pris": "185,-",
+        "Beskrivelse": "Grillet unghane med ris, korriander, kantareller og en hjemmelavet dressing.",
+        "Billede": "cosce"
   },
-  {
-    "Navn": "SCALLOPINE",
-    "Kategori": "Kødretter",
-    "Pris": "195,-",
-    "Beskrivelse": "Paneret kalv med salat på bønner, hjertesalat. Hertil en løvstikkecreme og citron",
-    "Billede": "scallopine"
+    {
+        "Navn": "SCALLOPINE",
+        "Kategori": "Kødretter",
+        "Pris": "195,-",
+        "Beskrivelse": "Paneret kalv med salat på bønner, hjertesalat. Hertil en løvstikkecreme og citron",
+        "Billede": "scallopine"
   },
-  {
-    "Navn": "MARGHERITA",
-    "Kategori": "Pizza",
-    "Pris": "115,-",
-    "Beskrivelse": "Tomat, mozzarella, basilikum, parmesan, olivenolie",
-    "Billede": "margherita"
+    {
+        "Navn": "MARGHERITA",
+        "Kategori": "Pizza",
+        "Pris": "115,-",
+        "Beskrivelse": "Tomat, mozzarella, basilikum, parmesan, olivenolie",
+        "Billede": "margherita"
   },
-  {
-    "Navn": "CAPRICCIOSA",
-    "Kategori": "Pizza",
-    "Pris": "125,-",
-    "Beskrivelse": "Kogt skinke fra Vilani, tomat, mozzarella, champignon, parmesan",
-    "Billede": "capricciosa"
+    {
+        "Navn": "CAPRICCIOSA",
+        "Kategori": "Pizza",
+        "Pris": "125,-",
+        "Beskrivelse": "Kogt skinke fra Vilani, tomat, mozzarella, champignon, parmesan",
+        "Billede": "capricciosa"
   },
-  {
-    "Navn": "PROSCIUTTO",
-    "Kategori": "Pizza",
-    "Pris": "125,-",
-    "Beskrivelse": "Prosciutto, tomat, rucola, mozzarella, parmesan",
-    "Billede": "prosciutto"
+    {
+        "Navn": "PROSCIUTTO",
+        "Kategori": "Pizza",
+        "Pris": "125,-",
+        "Beskrivelse": "Prosciutto, tomat, rucola, mozzarella, parmesan",
+        "Billede": "prosciutto"
   },
-  {
-    "Navn": "SALSICCIA",
-    "Kategori": "Pizza",
-    "Pris": "125,-",
-    "Beskrivelse": "Italiensk pølse, tomat, oliven, gorgonzola, løg.",
-    "Billede": "salsiccia"
+    {
+        "Navn": "SALSICCIA",
+        "Kategori": "Pizza",
+        "Pris": "125,-",
+        "Beskrivelse": "Italiensk pølse, tomat, oliven, gorgonzola, løg.",
+        "Billede": "salsiccia"
   },
-  {
-    "Navn": "PATATE",
-    "Kategori": "Pizza",
-    "Pris": "125,-",
-    "Beskrivelse": "Kartoffel, gedeost, trøffel, mascarpone, timian",
-    "Billede": "patate"
+    {
+        "Navn": "PATATE",
+        "Kategori": "Pizza",
+        "Pris": "125,-",
+        "Beskrivelse": "Kartoffel, gedeost, trøffel, mascarpone, timian",
+        "Billede": "patate"
   },
-  {
-    "Navn": "SALAME PICCANTE",
-    "Kategori": "Pizza",
-    "Pris": "125,-",
-    "Beskrivelse": "Italiensk salami, tomat, mozzarella, parmesan",
-    "Billede": "salame"
+    {
+        "Navn": "SALAME PICCANTE",
+        "Kategori": "Pizza",
+        "Pris": "125,-",
+        "Beskrivelse": "Italiensk salami, tomat, mozzarella, parmesan",
+        "Billede": "salame"
   },
-  {
-    "Navn": "FORMAGGI",
-    "Kategori": "Desserter",
-    "Pris": "105,-",
-    "Beskrivelse": "Udvalg af italienske oste",
-    "Billede": "formaggi"
+    {
+        "Navn": "FORMAGGI",
+        "Kategori": "Desserter",
+        "Pris": "105,-",
+        "Beskrivelse": "Udvalg af italienske oste",
+        "Billede": "formaggi"
   },
-  {
-    "Navn": "AFFOGATO",
-    "Kategori": "Desserter",
-    "Pris": "75,-",
-    "Beskrivelse": "Vaniljeis med espressoshot og nøddelknas.",
-    "Billede": "affogato"
+    {
+        "Navn": "AFFOGATO",
+        "Kategori": "Desserter",
+        "Pris": "75,-",
+        "Beskrivelse": "Vaniljeis med espressoshot og nøddelknas.",
+        "Billede": "affogato"
   },
-  {
-    "Navn": "TIRAMISU",
-    "Kategori": "Desserter",
-    "Pris": "75,-",
-    "Beskrivelse": "Mascarpone, kaffe, kakao",
-    "Billede": "tiramisu"
+    {
+        "Navn": "TIRAMISU",
+        "Kategori": "Desserter",
+        "Pris": "75,-",
+        "Beskrivelse": "Mascarpone, kaffe, kakao",
+        "Billede": "tiramisu"
   },
-  {
-    "Navn": "PANNA COTTA",
-    "Kategori": "Desserter",
-    "Pris": "75,-",
-    "Beskrivelse": "Vanilje panna cotta bar, med hindbærmouse",
-    "Billede": "panna"
+    {
+        "Navn": "PANNA COTTA",
+        "Kategori": "Desserter",
+        "Pris": "75,-",
+        "Beskrivelse": "Vanilje panna cotta bar, med hindbærmouse",
+        "Billede": "panna"
   },
-  {
-    "Navn": "CROSTATA DI LIMONE",
-    "Kategori": "Desserter",
-    "Pris": "75,-",
-    "Beskrivelse": "Citron, mørdej, marengs, hvid chokolade og vaniljeis",
-    "Billede": "crostata"
+    {
+        "Navn": "CROSTATA DI LIMONE",
+        "Kategori": "Desserter",
+        "Pris": "75,-",
+        "Beskrivelse": "Citron, mørdej, marengs, hvid chokolade og vaniljeis",
+        "Billede": "crostata"
   },
-  {
-    "Navn": "CANNOLI",
-    "Kategori": "Desserter",
-    "Pris": "75,-",
-    "Beskrivelse": "Italiensk småkage, med creme af ricottaost, marcapone, kandiseret frugt og pistacie.",
-    "Billede": "cannoli"
+    {
+        "Navn": "CANNOLI",
+        "Kategori": "Desserter",
+        "Pris": "75,-",
+        "Beskrivelse": "Italiensk småkage, med creme af ricottaost, marcapone, kandiseret frugt og pistacie.",
+        "Billede": "cannoli"
   },
-  {
-    "Navn": "SORBET",
-    "Kategori": "Desserter",
-    "Pris": "75,-",
-    "Beskrivelse": "Jordbærsorbet, friske bær og mynte",
-    "Billede": "sorbet"
+    {
+        "Navn": "SORBET",
+        "Kategori": "Desserter",
+        "Pris": "75,-",
+        "Beskrivelse": "Jordbærsorbet, friske bær og mynte",
+        "Billede": "sorbet"
+  },
+    {
+        "Navn": "Aperol Spritz",
+        "Kategori": "Drinks/vin",
+        "Pris": "75,-",
+        "": ""
+  },
+    {
+        "Navn": "Gin&tonic",
+        "Kategori": "Drinks/vin",
+        "Pris": "75,-",
+        "": ""
+  },
+    {
+        "Navn": "",
+        "Kategori": "",
+        "Pris": "",
+        "": ""
+  },
+    {
+        "Navn": "",
+        "Kategori": "",
+        "Pris": "",
+        "": ""
+  },
+    {
+        "Navn": "1 gl. Chardonnay, 1 gl. Corvina, 1 gl. Birbet",
+        "Kategori": "Drinks/vin",
+        "Pris": "195,-",
+        "": ""
+  },
+    {
+        "Navn": "1 gl. Pinot Grigio, 1 gl. Chianti, 1 gl. Birbet",
+        "Kategori": "Drinks/vin",
+        "Pris": "225,-",
+        "": ""
+  },
+    {
+        "Navn": "2016 Chardonnay, Tomaresca, Puglia",
+        "Kategori": "Drinks/vin",
+        "Pris": "75,-",
+        "": ""
+  },
+    {
+        "Navn": "2016 Pinot Grigio, Nals Margreid, Alto Adige",
+        "Kategori": "Drinks/vin",
+        "Pris": "85,-",
+        "": ""
+  },
+    {
+        "Navn": "2016 Serra Lupini, Negro, Piemonte",
+        "Kategori": "Drinks/vin",
+        "Pris": "95,-",
+        "": ""
+  },
+    {
+        "Navn": "Coca Cola",
+        "Kategori": "Drinks/vin",
+        "Pris": "40,-",
+        "": ""
+  },
+    {
+        "Navn": "Sprite",
+        "Kategori": "Drinks/vin",
+        "Pris": "40,-",
+        "": ""
+  },
+    {
+        "Navn": "Vand",
+        "Kategori": "Drinks/vin",
+        "Pris": "20,-",
+        "": ""
   }
+
+
 ]
