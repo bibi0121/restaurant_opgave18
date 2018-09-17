@@ -27,9 +27,12 @@ h2 {
 h5 {
     font-family: 'Fredericka the Great', cursive;
 
-    font-size: 5em;
+    font-size: 4em;
     text-align: center;
-    background-color: rgba(29, 29, 29, 0.37);
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.52);
+    margin-right: 90px;
+    margin-left: 90px;
 
 }
 
@@ -177,6 +180,27 @@ p {
     padding: 40px;
 }
 
+.billede3 {
+    background-image: linear-gradient(rgba(10, 61, 3, 0.2), rgba(1, 46, 1, 0.14)), url(imgs/stole.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 40px;
+}
+
+.billede4 {
+    /*    background-image: linear-gradient(rgba(10, 61, 3, 0.2), rgba(1, 46, 1, 0.14)), url(imgs/maad.jpg);*/
+    background-color: rgba(4, 95, 4, 0.66);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 40px;
+}
+
+
+
 @media screen and (min-width:480px) {
 
 
@@ -184,10 +208,10 @@ p {
         display: grid;
         padding-left: 10%;
         padding-right: 10%;
-        margin-top: -10px;
+        margin-top: -20px;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
-        margin-bottom: 150px;
+        margin-bottom: 190px;
     }
 }
 
@@ -198,9 +222,10 @@ p {
         display: grid;
         padding-left: 10%;
         padding-right: 10%;
-        margin-top: 70px;
+        margin-top: 100px;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
+        margin-bottom: 100px;
 
     }
 }
@@ -224,4 +249,211 @@ p {
     width: 230px;
     margin: 0;
 
+}
+
+@media screen and (min-width:480px) {
+
+
+    .section4 {
+        display: grid;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-top: 70px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        margin-bottom: 60px;
+
+
+    }
+}
+
+
+
+
+/***** book bord *****/
+
+
+
+/* Form fields */
+#booking-form {
+    font-family: 'Fredericka the Great', cursive;
+    max-width: 540px;
+    margin: 40px auto;
+    margin-bottom: 250px;
+    margin-top: 110px;
+
+}
+
+#booking-form ul {
+    padding-left: 0;
+}
+
+#booking-form li {
+    list-style: none;
+}
+
+#booking-form input,
+#booking-form textarea,
+#booking-form select {
+    font-size: 18px;
+    padding: 0 28px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgb(233, 233, 233);
+    text-align: left;
+    border-radius: 35px;
+    color: #000000;
+
+    letter-spacing: normal;
+    height: 50px;
+    line-height: 50px;
+    font-family: 'Merriweather', serif;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+#booking-form select {
+    background: url('https://seashineadventures.com/wp-content/uploads/2017/08/grey-chevron.png') no-repeat;
+    -webkit-appearance: none;
+    appearance: none;
+    background-size: 20px;
+    background-position: 97% 50%;
+    font-family: 'Fredericka the Great', cursive;
+
+}
+
+#booking-form textarea {
+    height: 120px;
+    line-height: 1.5;
+    padding: 15px 28px;
+}
+
+#booking-form input:focus,
+#booking-form textarea:focus,
+#booking-form select:focus {
+    outline: 0;
+    border: 1px solid rgb(211, 211, 211);
+}
+
+#booking-form label {
+    font-size: 25px;
+    font-weight: 300;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+#booking-form .next-btn,
+#booking-form .submit-btn {
+    background: #046717;
+    padding: 13px 20px;
+    color: #fff;
+    font-family: oswald, sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    min-width: 400px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 400;
+    border-radius: 0;
+    border: 0;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    width: 100%;
+    cursor: pointer;
+}
+
+#booking-form .next-btn:hover,
+#booking-form .submit-btn:hover {
+    background-color: #444b5d;
+    color: #fff;
+}
+
+/* Progress Bar */
+.progress-wrap {
+    margin: auto;
+    display: table;
+}
+
+.line-progress-bar {
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+
+.line {
+    height: 1px;
+    width: 250px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(217, 217, 217);
+    position: absolute;
+    margin-top: 8px;
+}
+
+.progress-wrap div ul {
+    display: flex;
+    width: 250px;
+    list-style: none;
+    padding: 0px;
+    margin: initial;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.progressbar-dots {
+    display: inline-flex;
+    border: #949494 solid 4px;
+    background: #333333;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #d4d4d4;
+    font-size: 20px;
+    margin-left: 0px;
+    color: #d4d4d4;
+    border: 0px solid rgb(217, 217, 217);
+    background: rgb(217, 217, 217);
+}
+
+.progressbar-dots span {
+    font-size: 12px;
+    line-height: 12px;
+    position: absolute;
+    margin-top: 60px;
+    /* width: 75px; */
+    float: left;
+    margin-left: -30px;
+    display: none;
+}
+
+.progressbar-dots.active {
+    color: #fff;
+    border: 0px solid rgb(0, 96, 33);
+    background: #00a813;
+}
+
+/*  Tab */
+.tab-pane {
+    display: none;
+}
+
+.tab-pane:first-child {
+    display: block;
+}
+
+/* Error */
+span.error {
+    font-size: 12px;
+    font-family: "helvetica neue", arial, sans-serif;
+    color: #D6041D;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
 }

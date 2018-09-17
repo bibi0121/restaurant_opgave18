@@ -107,6 +107,130 @@
 
     </section>
 
+    <section class="billede3">
+
+        <article class="om_billede">
+            <h5>BOOK BORD</h5>
+        </article>
+    </section>
+
+    <section id="section4">
+
+        <form action="#" id="booking-form">
+
+            <div class="tab-content">
+                <div class="tab-pane" id="step1">
+                    <ul>
+                        <li>
+                            <label>Hvor mange gæster?</label>
+                            <div class="errorTxt"></div>
+                            <select name="bf_totalGuests" required>
+                                <option value="">Vælg</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="More">Flere</option>
+                            </select>
+                        </li>
+                        <li style="list-style: none; display: inline">
+                            <button class="next-btn next-btn1" type="button">Næste</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane" id="step2">
+                    <ul>
+                        <li>
+                            <label>Hvilken dato og hvad tid vil du resevere bord til?</label>
+                            <div class="errorTxt"></div>
+                            <input type="text" class="datepicker" name="bf_date">
+                        </li>
+                        <li>
+                            <label>Hvilken tid på dagen?</label>
+                            <div class="errorTxt"></div>
+                            <select name="bf_time">
+                                <option value="">Vælg</option>
+                                <option value="Morning">Morgen</option>
+                                <option value="Midday">Eftermiddag</option>
+                                <option value="Late afternoon, ending with a sunset">Aften</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label>Hvor mange timer vil I sidde her?</label>
+                            <div class="errorTxt"></div>
+                            <select name="bf_hours">
+                                <option value="">Vælg</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+
+                            </select>
+                        </li>
+                        <li>
+                            <button class="next-btn next-btn2" type="button">Næste</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane" id="step3">
+                    <ul>
+                        <li>
+                            <label>Fornavn og Efternavn?</label>
+                            <div class="errorTxt"></div>
+                            <input type="text" name="bf_fullname">
+                        </li>
+                        <li>
+                            <label>Email, for bekræftelse af resevation </label>
+                            <div class="errorTxt"></div>
+                            <input type="email" name="bf_email">
+                        </li>
+                        <li>
+                            <label>Spørgsmål eller beskeder</label>
+                            <textarea name="bf_message"></textarea>
+                        </li>
+                        <li>
+                            <button class="submit-btn" type="submit">Request My Free Estimate</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="progress-wrap">
+                <div class="line-progress-bar">
+                    <div class="line"></div>
+                    <ul class="checkout-bar">
+                        <li class="progressbar-dots active"><span>Step 1</span></li>
+                        <li class="progressbar-dots"><span>Step 2</span></li>
+                        <li class="progressbar-dots"><span>Sidste step</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="loader" style="display: none;">
+                <img src="//d2erq0e4xljvr7.cloudfront.net/assets/img/ring.svg">
+            </div>
+        </form>
+
+    </section>
+
+
+    <section class="billede4">
+
+        <article class="kontakt_os">
+            <h5>Kontakt os</h5>
+        </article>
+    </section>
+
 
     <footer></footer>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
