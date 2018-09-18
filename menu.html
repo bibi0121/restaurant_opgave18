@@ -26,6 +26,7 @@
 <body>
 
 
+    <!--Dette er header med navbar inden i -->
 
     <div class="header">
         <a href="index.html"><i class="fa fa-chevron-left"></i></a>
@@ -57,29 +58,31 @@
 
     </div>
 
+    <!-- Denne section Modal, er et modalvindue, som bliver vist når der bliver trykket på en ret. Her popper et billede og en beskrivesle op -->
+
     <section id="modal">
         <button>X</button>
         <div id="modal-content">
             <h2 class="modal-Navn"></h2>
             <img class="modal-Billede" src="" alt=""> <br>
             <div class="modal-Beskrivelse"></div>
-
-
         </div>
     </section>
 
 
 
     <main class="container">
+
+        <!-- Denne data-container er til visning af alle retterne -->
+
         <section class="data-container"></section>
     </main>
 
 
+
+    <!-- Templaten er til for at vise enkelte elementer. Her viser jeg billede, navn og pris -->
     <template class="data-template">
         <article class="retter">
-
-
-
             <img src="" alt=""><br>
             <h2></h2>
             <br>
@@ -88,14 +91,13 @@
         </article>
     </template>
 
+
+
+
     <footer>
 
     </footer>
 
-    <script>
-
-
-    </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="javascript.js"></script>

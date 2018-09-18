@@ -19,6 +19,8 @@ function myFunction() {
 
 //----------------------------------------------
 
+// Dette element gør så alle href attributer falder glidende ned af siden.
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -29,14 +31,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-let retter; //(json filen er blevet læst ind og puttet ind i "retter")//
+
+
+//(json filen er blevet læst ind og puttet ind i "retter")//
+let retter;
 
 // Dest (destination) er en tom container..//
 let dest = document.querySelector(".data-container");
+
+// Det starter først når DOM-elementet er loaded.
 document.addEventListener("DOMContentLoaded", hentJson);
 madFilter = "Alle retter";
 
 document.querySelectorAll(".menu-item").forEach(knap => {
+
+    // Denne function er til for at der skal ske nået når der bliver trykket. Her sker der flitrering
     knap.addEventListener("click", filtrering)
 });
 
@@ -49,6 +58,7 @@ function filtrering() {
 }
 
 
+// Her bliver JSON filen hentet
 
 async function hentJson() {
     let myJson = await fetch("menu.json");
@@ -70,7 +80,7 @@ function visRetter() {
 
             //indsæt data i klonen //
 
-            // Content skal være nav, github osv, de funktioner der er i json filen //
+            // Content skal være de funktioner der er i json filen, som fx billeder, navn eller pris //
 
             klon.querySelector("img").src = "imgs/small/" + retter.Billede + "-sm.jpg";
             klon.querySelector("img").addEventListener("click", () => {
@@ -87,6 +97,7 @@ function visRetter() {
     })
 }
 
+// Modalvindue er skujt, men bliver vist når en ret bliver valgt. Her popper et vindue op, med beskrivelse af retterne.
 function visModal(retter) {
     modal.classList.add("vis");
     modal.querySelector(".modal-Navn").textContent = retter.Navn;
@@ -99,6 +110,7 @@ function visModal(retter) {
 
 function skjulModal() {
     modal.classList.remove("vis");
+
     //window.scrollTo(0);
 }
 
@@ -165,9 +177,3 @@ $(".submit-btn").click(function () {
 
 
 // footer //
-
-
-$(document).ready(function () {
-    $("#contentForm").validationEngine('attach', {});
-    $('#projecttype').selectize();
-});
