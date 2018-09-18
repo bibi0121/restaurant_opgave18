@@ -162,3 +162,12 @@ $(".submit-btn").click(function () {
         return false;
     }
 });
+
+
+// footer //
+
+
+$(document).ready(function () {
+    $("#contentForm").validationEngine('attach', {});
+    $('#projecttype').selectize();
+});

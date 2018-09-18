@@ -37,7 +37,8 @@ h5 {
 }
 
 b {
-    font-family: 'Tangerine', bold;
+    font-family: 'Tangerine',
+        bold;
     font-size: 1.9em;
 }
 
@@ -190,8 +191,8 @@ p {
 }
 
 .billede4 {
-    /*    background-image: linear-gradient(rgba(10, 61, 3, 0.2), rgba(1, 46, 1, 0.14)), url(imgs/maad.jpg);*/
-    background-color: rgba(4, 95, 4, 0.66);
+    background-image: linear-gradient(rgba(10, 61, 3, 0.2), rgba(1, 46, 1, 0.14)), url(imgs/maad.jpg);
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -267,7 +268,21 @@ p {
     }
 }
 
+@media screen and (min-width:480px) {
 
+
+    .section5 {
+        display: grid;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-top: 70px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        margin-bottom: 60px;
+
+
+    }
+}
 
 
 /***** book bord *****/
@@ -457,3 +472,6 @@ span.error {
     display: block;
     margin-bottom: 10px;
 }
+
+/*** Footer ***/
+
