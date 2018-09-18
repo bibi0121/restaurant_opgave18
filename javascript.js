@@ -2,14 +2,20 @@
 
 
 function myFunction() {
+
+    // Her hentes elementet fra dens Id:
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
     var btnText = document.getElementById("myBtn");
 
+    // Trykkes der på knappen læses der mere tekst
     if (dots.style.display === "none") {
         dots.style.display = "inline";
         btnText.innerHTML = "Læs mere";
         moreText.style.display = "none";
+
+        // Trykker man på knappen igen, efter der er trykket 1 gang,
+// vises der mindre tekst igen.
     } else {
         dots.style.display = "none";
         btnText.innerHTML = "Læs mindre";
@@ -33,7 +39,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 
-//(json filen er blevet læst ind og puttet ind i "retter")//
+// JSON filen er blevet læst ind og puttet ind i "retter"
+
 let retter;
 
 // Dest (destination) er en tom container..//
@@ -45,7 +52,8 @@ madFilter = "Alle retter";
 
 document.querySelectorAll(".menu-item").forEach(knap => {
 
-    // Denne function er til for at der skal ske nået når der bliver trykket. Her sker der flitrering
+    // Denne function er til for at der skal ske nået når der bliver trykket.
+// Her sker der flitrering
     knap.addEventListener("click", filtrering)
 });
 
@@ -58,7 +66,8 @@ function filtrering() {
 }
 
 
-// Her bliver JSON filen hentet
+// Funktionen her indlæser data ind fra JSON filen og ligger objekterne (retter),
+//ind i et array. Og efter bliver retterne kaldt (visRetter).
 
 async function hentJson() {
     let myJson = await fetch("menu.json");
@@ -97,7 +106,9 @@ function visRetter() {
     })
 }
 
-// Modalvindue er skujt, men bliver vist når en ret bliver valgt. Her popper et vindue op, med beskrivelse af retterne.
+// Modalvindue er skujt, men bliver vist når en ret bliver valgt.
+//Her popper et vindue op, med beskrivelse af retterne.
+
 function visModal(retter) {
     modal.classList.add("vis");
     modal.querySelector(".modal-Navn").textContent = retter.Navn;
