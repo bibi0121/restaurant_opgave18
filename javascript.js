@@ -15,7 +15,7 @@ function myFunction() {
         moreText.style.display = "none";
 
         // Trykker man på knappen igen, efter der er trykket 1 gang,
-// vises der mindre tekst igen.
+        // vises der mindre tekst igen.
     } else {
         dots.style.display = "none";
         btnText.innerHTML = "Læs mindre";
@@ -53,7 +53,7 @@ madFilter = "Alle retter";
 document.querySelectorAll(".menu-item").forEach(knap => {
 
     // Denne function er til for at der skal ske nået når der bliver trykket.
-// Her sker der flitrering
+    // Her sker der flitrering
     knap.addEventListener("click", filtrering)
 });
 
@@ -112,10 +112,11 @@ function visRetter() {
 function visModal(retter) {
     modal.classList.add("vis");
     modal.querySelector(".modal-Navn").textContent = retter.Navn;
+    modal.querySelector(".modal-Beskrivelse").textContent = retter.Beskrivelse;
     modal.querySelector(".modal-Billede").src = "imgs/large/" + retter.Billede + ".jpg";
     modal.querySelector(".modal-Billede").alt = "Foto af " + retter.Navn;
-    modal.querySelector(".data-Beskrivelse").textContent = retter.Beskrivelse;
-    modal.querySelector("button").addEventListener("click", skjulModal);
+
+    modal.querySelector("div").addEventListener("click", skjulModal);
 
 }
 
@@ -128,63 +129,94 @@ function skjulModal() {
 
 // book bord //
 
-var v = $("#booking-form").validate({
-    rules: {
-        bf_totalGuests: {
-            required: true
-        },
-        bf_date: {
-            required: true
-        },
-        bf_time: {
-            required: true
-        },
-        bf_hours: {
-            required: true
-        },
-        bf_fullname: {
-            required: true
-        },
-        bf_email: {
-            required: true,
-            email: true
-        }
-    },
-    errorElement: "span",
-    errorClass: "error",
-    errorPlacement: function (error, element) {
-        error.insertBefore(element);
-    }
-});
+var currentTab = 0; // Denne "tab" er den første tab
+showTab(currentTab);
 
-$(".next-btn1").click(function () {
-    if (v.form()) {
-        $(".tab-pane").hide();
-        $("#step2").fadeIn(1000);
-        $(".progressbar-dots").removeClass("active");
-        $(".progressbar-dots:nth-child(2)").addClass("active");
+function showTab(n) {
+    // Denne funktion gør så der bliver spillet en specefik tab
+    var x = document.getElementsByClassName("tab");
+    x[n].style.display = "block";
+    // ... Og knapperne for "forrige og næste"
+    if (n == 0) {
+        document.getElementById("prevBtn").style.display = "none";
+    } else {
+        document.getElementById("prevBtn").style.display = "inline";
     }
-});
-$(".next-btn2").click(function () {
-    if (v.form()) {
-        $(".tab-pane").hide();
-        $("#step3").fadeIn(1000);
-        $(".progressbar-dots").removeClass("active");
-        $(".progressbar-dots:nth-child(3)").addClass("active");
+    if (n == (x.length - 1)) {
+        document.getElementById("nextBtn").innerHTML = "Submit";
+    } else {
+        document.getElementById("nextBtn").innerHTML = "Næste";
     }
-});
 
-$(".submit-btn").click(function () {
-    if (v.form()) {
-        $("#loader").show();
-        setTimeout(function () {
-            $("#booking-form").html(
-                "<h2>Your message was sent successfully. Thanks! We'll be in touch as soon as we can, which is usually like lightning (Unless we're sailing or eating tacos!).</h2>"
-            );
-        }, 1000);
+    fixStepIndicator(n)
+}
+
+function nextPrev(n) {
+    // Denne funktion finder ud af hvilken tab der skal køres
+    var x = document.getElementsByClassName("tab");
+
+    if (n == 1 && !validateForm()) return false;
+    // dette gemmer en den forrige tab
+    x[currentTab].style.display = "none";
+
+    currentTab = currentTab + n;
+
+    if (currentTab >= x.length) {
+
+        document.getElementById("regForm").submit();
         return false;
     }
-});
+
+    showTab(currentTab);
+}
+
+function validateForm() {
+    // denne funktion validerer form:
+    var x, y, i, valid = true;
+    x = document.getElementsByClassName("tab");
+    y = x[currentTab].getElementsByTagName("input");
+    // Dette er et loop som tjekker hvert indput i en tab:
+    for (i = 0; i < y.length; i++) {
+        // Dette er hvis der er en tab som er tom:
+        if (y[i].value == "") {
+
+            y[i].className += " invalid";
+            valid = false;
+        }
+    }
+    if (valid) {
+        document.getElementsByClassName("step")[currentTab].className += " finish";
+    }
+    return valid;
+}
+
+function fixStepIndicator(n) {
+    var i, x = document.getElementsByClassName("step");
+    for (i = 0; i < x.length; i++) {
+        x[i].className = x[i].className.replace(" active", "");
+    }
+    x[n].className += " active";
+}
 
 
-// footer //
+// Scroll tilbage til toppen - Knap
+
+window.onscroll = function () {
+    scrollFunction()
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("tilTop").style.display = "block";
+    } else {
+        document.getElementById("tilTop").style.display = "none";
+    }
+}
+
+// Når man klikker på denne knap, så kommer man tilbage til toppen
+function tilTopFunktion() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+

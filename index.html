@@ -37,9 +37,9 @@
 
             <button class="knap"> <span> <a href="menu.html">Menu</a> </span></button>
 
-            <button class="knap"> <span> <a href="#bookbord">Book Bord</a></span></button>
+            <button class="knap"> <span> <a href="#section4">Book Bord</a></span></button>
 
-            <button class="knap"><span> <a href="#kontakt">Kontakt os</a></span></button>
+            <button class="knap"><span> <a href="#kontakt_os">Kontakt os</a></span></button>
 
         </div>
         <p>
@@ -71,6 +71,7 @@
 
         <article class="om_billede">
             <h5>INFO OM MENUEN</h5>
+            <h6></h6>
         </article>
     </section>
 
@@ -78,17 +79,17 @@
     <section class="section2">
         <section class="section3">
 
-            <article class="billeder_menu">
-                <img src="imgs/k%C3%B8dboller.jpg" alt="kødboller">
+            <article class="billeder_menu1">
+                <!--             <img src="imgs/k%C3%B8dboller.jpg" alt="kødboller">-->
             </article>
-            <article class="billeder_menu">
-                <img src="imgs/maad.jpg" alt="italiensk mad">
+            <article class="billeder_menu2">
+                <!--                <img src="imgs/maad.jpg" alt="italiensk mad">-->
             </article>
-            <article class="billeder_menu">
-                <img src="imgs/pizzaen.jpg" alt="pizza">
+            <article class="billeder_menu3">
+                <!--                <img src="imgs/pizzaen.jpg" alt="pizza">-->
             </article>
-            <article class="billeder_menu">
-                <img src="imgs/pannacotta.jpg" alt="italiensk dessert">
+            <article class="billeder_menu4">
+                <!--                <img src="imgs/pannacotta.jpg" alt="italiensk dessert">-->
             </article>
 
 
@@ -118,168 +119,137 @@
 
     <section id="section4">
 
-        <form action="#" id="booking-form">
 
-            <div class="tab-content">
-                <div class="tab-pane" id="step1">
-                    <ul>
-                        <li>
-                            <label>Hvor mange gæster?</label>
-                            <div class="errorTxt"></div>
-                            <select name="bf_totalGuests" required>
-                                <option value="">Vælg</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
-                                <option value="More">Flere</option>
-                            </select>
-                        </li>
-                        <li style="list-style: none; display: inline">
-                            <button class="next-btn next-btn1" type="button">Næste</button>
-                        </li>
-                    </ul>
-                </div>
-                <div class="tab-pane" id="step2">
-                    <ul>
-                        <li>
-                            <label>Hvilken dato og hvad tid vil du resevere bord til?</label>
-                            <div class="errorTxt"></div>
-                            <input type="text" class="datepicker" name="bf_date">
-                        </li>
-                        <li>
-                            <label>Hvilken tid på dagen?</label>
-                            <div class="errorTxt"></div>
-                            <select name="bf_time">
-                                <option value="">Vælg</option>
-                                <option value="Morning">Morgen</option>
-                                <option value="Midday">Eftermiddag</option>
-                                <option value="Late afternoon, ending with a sunset">Aften</option>
-                            </select>
-                        </li>
-                        <li>
-                            <label>Hvor mange timer vil I sidde her?</label>
-                            <div class="errorTxt"></div>
-                            <select name="bf_hours">
-                                <option value="">Vælg</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
 
-                            </select>
-                        </li>
-                        <li>
-                            <button class="next-btn next-btn2" type="button">Næste</button>
-                        </li>
-                    </ul>
-                </div>
-                <div class="tab-pane" id="step3">
-                    <ul>
-                        <li>
-                            <label>Fornavn og Efternavn?</label>
-                            <div class="errorTxt"></div>
-                            <input type="text" name="bf_fullname">
-                        </li>
-                        <li>
-                            <label>Email, for bekræftelse af resevation </label>
-                            <div class="errorTxt"></div>
-                            <input type="email" name="bf_email">
-                        </li>
-                        <li>
-                            <label>Spørgsmål eller beskeder</label>
-                            <textarea name="bf_message"></textarea>
-                        </li>
-                        <li>
-                            <button class="submit-btn" type="submit">Request My Free Estimate</button>
-                        </li>
-                    </ul>
+        <form id="regForm" action="">
+
+            <h1>Resever</h1>
+
+
+            <div class="tab">Navn:
+                <p><input placeholder="Dit navn..." oninput="this.className = ''"></p>
+
+            </div>
+
+            <div class="tab">Kontakt Info:
+                <p><input placeholder="Telefon..." oninput="this.className = ''"></p>
+            </div>
+
+            <div class="tab">Antal gæster:
+                <p><input placeholder="" oninput="this.className = ''"></p>
+
+            </div>
+
+            <div class="tab">Tid og Dato:
+
+                <p><input placeholder="12.00" oninput="this.className = ''"></p>
+                <p><input placeholder="dd/mm/yyyy " oninput="this.className = ''"></p>
+            </div>
+
+
+
+
+            <div style="overflow:auto;">
+                <div style="float:right;">
+                    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Forrige</button>
+                    <button type="button" id="nextBtn" onclick="nextPrev(1)">Næste</button>
                 </div>
             </div>
 
-            <div class="progress-wrap">
-                <div class="line-progress-bar">
-                    <div class="line"></div>
-                    <ul class="checkout-bar">
-                        <li class="progressbar-dots active"><span>Step 1</span></li>
-                        <li class="progressbar-dots"><span>Step 2</span></li>
-                        <li class="progressbar-dots"><span>Sidste step</span></li>
-                    </ul>
-                </div>
+
+            <div style="text-align:center;margin-top:40px;">
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
             </div>
 
-            <div id="loader" style="display: none;">
-                <img src="//d2erq0e4xljvr7.cloudfront.net/assets/img/ring.svg">
-            </div>
         </form>
-
     </section>
 
 
     <section class="billede4">
 
-        <article class="kontakt_os">
+        <article id="kontakt_os">
             <h5>Kontakt os</h5>
+            <h6></h6>
         </article>
     </section>
 
+    <section class="section5">
+
+        <div class="container">
+            <form action="/action_page.php">
+                <label for="fname">Fornavn</label>
+                <input type="text" id="fname" name="firstname" placeholder="Dit fornavn..">
+
+                <label for="lname">Efternavn</label>
+                <input type="text" id="lname" name="lastname" placeholder="Dit efternavn..">
 
 
+                <label for="subject">Besked:</label>
+                <textarea id="subject" name="subject" placeholder="Skriv noget.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
 
 
-    <footer>
-        <section id="section5">
-            <article>
-                <p class="footer_text">
-                    <strong>Adresse:</strong>
-                    <br>
-                    <br>
-                    1234 Lygten 16
-                    <br>
-                    By, Nørrebro 2200
+    <section id="kontakter">
 
-                    <br>
-                    <br>
-                    <br>
-                    <strong>Kontakt</strong>
-                    <br>
-                    <br>
+        <article>
+            <div class="address">
+                <Strong>ADRESSE:</Strong>
+                <ul>
+                    <li>Lygten 16, 2200 København N</li>
+                </ul>
+                <strong>KONTAKT:</strong>
+                <ul>
+                    <li>+45 11223344</li>
+                    <li><strong>Email: </strong> SiboSano@hotmail.com</li>
+                </ul>
+                <strong>ÅBNINGSTIDER:</strong>
+                <ul>
+                    <li>MANDAG - TORSDAG: (11:00-22:00)</li>
+                    <li>FREDAG - LØRDAG: (12:00-24:00)</li>
+                    <li>SØNDAG - LUKKET</li>
+                </ul>
+            </div>
+            <div class="map">
+                <strong>FIND OS HER:</strong>
+                <br>
+                <br>
 
-                    Email:
-                    SiboSano@hotmail.com
-                    <br>
-                    Telefon:
-                    +45 12345678
-                    <br>
-                    Facebook:
-                    SiboSano/restaurant
-                </p>
-            </article>
-            <article>
-                <p class="footer_text">
-                    <strong>FEEDBACK</strong>
-                    <br>
-                    Send endelig gerne jeres feedback, ideer og kritik.<br> Alt vil blive modtaget med god hånd.
-                </p>
+                <div class="kort">
+                    <div class="gmap_canvas"><iframe width="350" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=lygten%2016&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
 
-            </article>
-            <article>
-                <div class="google_maps">
-                    <iframe src="https://www.google.com/maps/place/Lygten+16,+2400+K%C3%B8benhavn/@55.706374,12.536936,17z/data=!3m1!4b1!4m5!3m4!1s0x46525248eb13378b:0xdccf089a0e12ec32!8m2!3d55.706371!4d12.53913"></iframe>
                 </div>
-            </article>
-        </section>
+            </div>
+
+        </article>
+
+    </section>
+    <footer>
+
+
+        <p>
+            <span>|</span>
+
+            <a href="https://www.facebook.com/bib.hagenow" target="_blank"> <i class="fa fa-facebook"></i></a>
+            <span>|</span>
+
+            <a href="https://www.instagram.com/bibihagenow/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <span>|</span>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <small>CiboSanoRestaurante</small>
+        </p>
     </footer>
+
+    <button onclick="tilTopFunktion()" id="tilTop" title="Go to the top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="javascript.js"></script>
 </body>

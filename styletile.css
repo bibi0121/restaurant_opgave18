@@ -11,9 +11,10 @@ html {
 
 h1 {
     font-family: 'Tangerine', bold;
-
+    margin-top: 80px;
     font-size: 5em;
     text-align: center;
+    margin-bottom: 80px;
 }
 
 h2 {
@@ -23,6 +24,8 @@ h2 {
     margin-top: -1px;
 
 }
+
+
 
 h5 {
     font-family: 'Fredericka the Great', cursive;
@@ -34,6 +37,16 @@ h5 {
     margin-right: 90px;
     margin-left: 90px;
 
+}
+
+@media screen and (max-width:550px) {
+
+
+    h5 {
+        font-size: 2em;
+        background-color: rgba(0, 0, 0, 0.64);
+
+    }
 }
 
 b {
@@ -191,7 +204,7 @@ p {
 }
 
 .billede4 {
-    background-image: linear-gradient(rgba(10, 61, 3, 0.2), rgba(1, 46, 1, 0.14)), url(imgs/maad.jpg);
+    background-image: linear-gradient(rgba(10, 61, 3, 0.2), rgba(1, 46, 1, 0.14)), url(imgs/p.jpg);
 
     background-position: center;
     background-repeat: no-repeat;
@@ -202,17 +215,92 @@ p {
 
 
 
-@media screen and (min-width:480px) {
+@media screen and (min-width:1050px) {
 
 
     .section1 {
         display: grid;
         padding-left: 10%;
-        padding-right: 10%;
-        margin-top: -20px;
+
+        margin-top: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+        margin-bottom: 50px;
+
+    }
+}
+
+@media screen and (max-width:1050px) {
+
+
+    .section1 img {
+        margin-left: 25%;
+        margin-bottom: 80px;
+
+    }
+}
+
+
+@media screen and (max-width:700px) {
+
+
+    .section1 img {
+        margin-left: 20%;
+
+    }
+}
+
+@media screen and (max-width:550px) {
+
+
+    .section1 img {
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+
+    .section1 img {
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width:465px) {
+
+
+    .section1 img {
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width:436px) {
+
+
+    .section1 img {
+        margin-left: 2.5%;
+    }
+}
+
+@media screen and (max-width:400px) {
+
+
+    .section1 img {
+        margin-left: 0%;
+    }
+}
+
+@media screen and (min-width:800px) {
+
+
+    .billede1 img {
+        display: grid;
+        margin-top: 0px;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
         margin-bottom: 190px;
+        margin-right: 100px;
+
     }
 }
 
@@ -225,11 +313,155 @@ p {
         padding-right: 10%;
         margin-top: 100px;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 10px;
+        grid-gap: 100px;
         margin-bottom: 100px;
 
     }
 }
+
+@media screen and (max-width:1050px) {
+
+
+    .section2 {
+        display: grid;
+        padding-left: 10%;
+
+        margin-top: 100px;
+        grid-template-columns: repeat(1, 1fr);
+
+        margin-bottom: 50px;
+
+    }
+}
+
+
+/** Billederne til section 2 -- Indholder @media **/
+.billeder_menu1 {
+    background-image: url(imgs/k%C3%B8dboller.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.billeder_menu2 {
+    background-image: url(imgs/maad.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.billeder_menu3 {
+    background-image: url(imgs/pizzaen.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.billeder_menu4 {
+    background-image: url(imgs/pannacotta.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (max-width:1050px) {
+
+
+
+    .billeder_menu1 {
+        width: 30vh;
+        height: 30vh;
+
+
+    }
+}
+
+@media screen and (max-width:1050px) {
+
+
+
+    .billeder_menu2 {
+        width: 30vh;
+        height: 30vh;
+
+    }
+}
+
+@media screen and (max-width:1050px) {
+
+
+
+    .billeder_menu3 {
+        width: 30vh;
+        height: 30vh;
+
+    }
+}
+
+@media screen and (max-width:1050px) {
+
+
+
+    .billeder_menu4 {
+        width: 30vh;
+        height: 30vh;
+
+    }
+}
+
+@media screen and (max-width:500px) {
+
+
+
+    .billeder_menu1 {
+        width: 20vh;
+        height: 20vh;
+        float: left;
+        margin-left: 30px;
+
+
+    }
+}
+
+@media screen and (max-width:500px) {
+
+
+
+    .billeder_menu2 {
+        width: 20vh;
+        height: 20vh;
+        float: right;
+        margin-right: 40px;
+
+    }
+}
+
+@media screen and (max-width:500px) {
+
+
+
+    .billeder_menu3 {
+        width: 20vh;
+        height: 20vh;
+        float: left;
+        margin-left: 30px;
+
+    }
+}
+
+@media screen and (max-width:500px) {
+
+
+
+    .billeder_menu4 {
+        width: 20vh;
+        height: 20vh;
+        float: right;
+        margin-right: 40px;
+
+    }
+}
+
+
+
+
+
 
 @media screen and (min-width:480px) {
 
@@ -276,7 +508,7 @@ p {
         padding-left: 10%;
         padding-right: 10%;
         margin-top: 70px;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-gap: 10px;
         margin-bottom: 60px;
 
@@ -285,193 +517,205 @@ p {
 }
 
 
+
 /***** book bord *****/
 
-
-
-/* Form fields */
-#booking-form {
-    font-family: 'Fredericka the Great', cursive;
-    max-width: 540px;
-    margin: 40px auto;
-    margin-bottom: 250px;
-    margin-top: 110px;
+#regForm {
+    background-color: #ffffff;
+    margin: 100px auto;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+    margin-top: 20px;
 
 }
 
-#booking-form ul {
-    padding-left: 0;
-}
 
-#booking-form li {
-    list-style: none;
-}
 
-#booking-form input,
-#booking-form textarea,
-#booking-form select {
-    font-size: 18px;
-    padding: 0 28px;
+input {
+    padding: 10px;
     width: 100%;
-    box-sizing: border-box;
-    border: 1px solid rgb(233, 233, 233);
-    text-align: left;
-    border-radius: 35px;
-    color: #000000;
-
-    letter-spacing: normal;
-    height: 50px;
-    line-height: 50px;
-    font-family: 'Merriweather', serif;
-    background: #fff;
-    margin-bottom: 20px;
-}
-
-#booking-form select {
-    background: url('https://seashineadventures.com/wp-content/uploads/2017/08/grey-chevron.png') no-repeat;
-    -webkit-appearance: none;
-    appearance: none;
-    background-size: 20px;
-    background-position: 97% 50%;
+    font-size: 17px;
     font-family: 'Fredericka the Great', cursive;
-
+    border: 1px solid #aaaaaa;
 }
 
-#booking-form textarea {
-    height: 120px;
-    line-height: 1.5;
-    padding: 15px 28px;
+
+input.invalid {
+    background-color: #ffdddd;
 }
 
-#booking-form input:focus,
-#booking-form textarea:focus,
-#booking-form select:focus {
-    outline: 0;
-    border: 1px solid rgb(211, 211, 211);
+.tab {
+    display: none;
+    font-size: 1.8em;
+    font-family: 'Fredericka the Great', cursive;
 }
 
-#booking-form label {
-    font-size: 25px;
-    font-weight: 300;
-    display: block;
-    margin-bottom: 15px;
-}
-
-/* Buttons */
-#booking-form .next-btn,
-#booking-form .submit-btn {
-    background: #046717;
-    padding: 13px 20px;
-    color: #fff;
-    font-family: oswald, sans-serif;
-    text-transform: uppercase;
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: 1px;
-    min-width: 400px;
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
     display: inline-block;
-    text-align: center;
-    font-weight: 400;
-    border-radius: 0;
-    border: 0;
-    transition-property: background-color;
-    transition-duration: 0.5s;
+    opacity: 0.5;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+
+.step.finish {
+    background-color: #024505;
+}
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=text],
+select,
+textarea {
     width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #016204;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
 }
 
-#booking-form .next-btn:hover,
-#booking-form .submit-btn:hover {
-    background-color: #444b5d;
-    color: #fff;
+input[type=submit]:hover {
+    background-color: #004303;
 }
 
-/* Progress Bar */
-.progress-wrap {
-    margin: auto;
-    display: table;
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }
 
-.line-progress-bar {
-    display: flex;
-    margin: auto;
-    width: 100%;
-}
-
-.line {
-    height: 1px;
-    width: 250px;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-bottom-color: rgb(217, 217, 217);
-    position: absolute;
-    margin-top: 8px;
-}
-
-.progress-wrap div ul {
-    display: flex;
-    width: 250px;
-    list-style: none;
-    padding: 0px;
-    margin: initial;
-    justify-content: space-between;
-    z-index: 1;
-}
-
-.progressbar-dots {
-    display: inline-flex;
-    border: #949494 solid 4px;
-    background: #333333;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    color: #d4d4d4;
-    font-size: 20px;
-    margin-left: 0px;
-    color: #d4d4d4;
-    border: 0px solid rgb(217, 217, 217);
-    background: rgb(217, 217, 217);
-}
-
-.progressbar-dots span {
-    font-size: 12px;
-    line-height: 12px;
-    position: absolute;
-    margin-top: 60px;
-    /* width: 75px; */
-    float: left;
-    margin-left: -30px;
-    display: none;
-}
-
-.progressbar-dots.active {
-    color: #fff;
-    border: 0px solid rgb(0, 96, 33);
-    background: #00a813;
-}
-
-/*  Tab */
-.tab-pane {
-    display: none;
-}
-
-.tab-pane:first-child {
-    display: block;
-}
-
-/* Error */
-span.error {
-    font-size: 12px;
-    font-family: "helvetica neue", arial, sans-serif;
-    color: #D6041D;
-    text-transform: uppercase;
-    display: block;
-    margin-bottom: 10px;
-}
 
 /*** Footer ***/
+#kontakter article {
+    display: grid;
+}
 
+.map {
+    place-self: center;
+}
+
+.address {
+    place-self: center;
+}
+
+#kontakter article {
+    grid-template-columns: 1fr 500px 500px 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    background-color: rgba(0, 77, 0, 0.13);
+}
+
+.txt {
+    grid-column: 2 / span 2;
+    grid-row: 1;
+}
+
+.address {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.map {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.kort {
+    text-align: right;
+    height: 250px;
+    width: 350px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 250px;
+    width: 350px;
+}
+
+footer {
+    height: 60px;
+    background-color: rgba(1, 54, 1, 0.79);
+    margin-top: -20px;
+}
+
+footer p {
+    font-size: 1.5em;
+    text-align: center;
+
+}
+
+footer a {
+    color: black;
+
+}
+
+footer i {
+    color: black;
+    cursor: pointer;
+}
+
+footer span {
+    font-size: 1em;
+
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer i:hover {
+    color: white;
+}
+
+footer small {
+    font-size: 0.8em;
+    font-family: 'Tangerine', bold;
+}
+
+#tilTop {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    background-color: rgba(4, 132, 15, 0.74);
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#tilTop:hover {
+
+    color: black;
+}

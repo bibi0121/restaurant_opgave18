@@ -26,17 +26,29 @@
 <body>
 
 
+
+
+    <!-- Denne section Modal, er et modalvindue, som bliver vist når der bliver trykket på en ret. Her popper et billede og en beskrivesle op -->
+
+    <section id="modal">
+
+        <div id="modal-content">
+            <h2 class="modal-Navn"></h2>
+            <p class="modal-Beskrivelse"></p>
+            <img class="modal-Billede" src="" alt=""> <br>
+
+        </div>
+    </section>
+
     <!--Dette er header med navbar inden i -->
 
     <div class="header">
-        <a href="index.html"><i class="fa fa-chevron-left"></i></a>
-        <img src="assets/logo32x32.png" alt="logo">
+        <!--        <a href="index.html"><img src="assets/logo60x60.png" alt="logo"></a>-->
+        <a href="index.html"><img src="assets/logo_tilbage@2x.png" alt="logo"></a>
+
+        <h4>MENU</h4>
+
         <div class="header_text">
-
-
-            <!--          <h4>Cibo Sano</h4>-->
-
-
 
 
             <button class="menu-item" data-Kategori="Alle retter">Alle retter </button>
@@ -51,27 +63,17 @@
 
             <button class="menu-item" data-Kategori="Drinks/vin">Drikkevare</button>
 
-            <h3></h3>
+
         </div>
 
 
     </div>
 
-    <!-- Denne section Modal, er et modalvindue, som bliver vist når der bliver trykket på en ret. Her popper et billede og en beskrivesle op -->
-
-    <section id="modal">
-        <button>X</button>
-        <div id="modal-content">
-            <h2 class="modal-Navn"></h2>
-            <img class="modal-Billede" src="" alt=""> <br>
-            <div class="modal-Beskrivelse"></div>
-        </div>
-    </section>
 
 
 
     <main class="container">
-
+        <h3></h3>
         <!-- Denne data-container er til visning af alle retterne -->
 
         <section class="data-container"></section>
@@ -81,6 +83,7 @@
 
     <!-- Templaten er til for at vise enkelte elementer. Her viser jeg billede, navn og pris -->
     <template class="data-template">
+
         <article class="retter">
             <img src="" alt=""><br>
             <h2></h2>
@@ -92,10 +95,59 @@
 
 
 
+    <section id="kontakter">
+
+        <article>
+            <div class="address">
+                <Strong>ADRESSE:</Strong>
+                <ul>
+                    <li>Lygten 16, 2200 København N</li>
+                </ul>
+                <strong>KONTAKT:</strong>
+                <ul>
+                    <li>+45 11223344</li>
+                    <li><strong>Email: </strong> SiboSano@hotmail.com</li>
+                </ul>
+                <strong>ÅBNINGSTIDER:</strong>
+                <ul>
+                    <li>MANDAG - TORSDAG: (11:00-22:00)</li>
+                    <li>FREDAG - LØRDAG: (12:00-24:00)</li>
+                    <li>SØNDAG - LUKKET</li>
+                </ul>
+            </div>
+            <div class="map">
+                <strong>FIND OS HER:</strong>
+                <br>
+                <br>
+
+                <div class="kort">
+                    <div class="gmap_canvas"><iframe width="350" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=lygten%2016&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+
+                </div>
+            </div>
+
+        </article>
+
+    </section>
+
 
     <footer>
 
+
+        <p>
+            <span>|</span>
+
+            <a href="https://www.facebook.com/bib.hagenow" target="_blank"> <i class="fa fa-facebook"></i></a>
+            <span>|</span>
+
+            <a href="https://www.instagram.com/bibihagenow/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <span>|</span>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <small>CiboSanoRestaurante</small>
+        </p>
     </footer>
+
+
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
