@@ -617,23 +617,23 @@ input[type=submit]:hover {
     display: grid;
 }
 
-.map {
-    place-self: center;
-}
+
 
 .address {
-    place-self: center;
+    margin-left: 60px
 }
 
 #kontakter article {
     grid-template-columns: 1fr 500px 500px 1fr;
     grid-template-rows: 100px 1fr 100px;
     background-color: rgba(0, 77, 0, 0.13);
+
 }
 
 .txt {
     grid-column: 2 / span 2;
     grid-row: 1;
+
 }
 
 .address {
@@ -641,23 +641,37 @@ input[type=submit]:hover {
     grid-row: 2;
 }
 
-.map {
-    grid-column: 3;
-    grid-row: 2;
-}
+
 
 .kort {
     text-align: right;
-    height: 250px;
-    width: 350px;
+    height: 150px;
+    width: 250px;
+
 }
 
 .gmap_canvas {
     overflow: hidden;
     background: none !important;
-    height: 250px;
+    height: 150px;
     width: 350px;
 }
+
+@media screen and (max-width:480px) {
+
+
+    .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        height: 150px;
+        width: 150px;
+
+
+    }
+}
+
+
+
 
 footer {
     height: 60px;
